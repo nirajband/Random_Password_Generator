@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate a Random Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a<br><span>Random Password</span></h1>
+
+        <h2>Choose your password length</h2>
+        <div class="select">
+            <label>
+                <input type="radio" name="length" value="4">
+                4
+              </label>
+              <label>
+                <input type="radio" name="length" value="6">
+                6
+              </label>
+              <label>
+                <input type="radio" name="length" value="8">
+                8
+              </label>
+              <label>
+                <input type="radio" name="length" value="12">
+                12
+              </label>
+        </div>
+        <div class="display">
+            <input type="text" id="password" placeholder="Password">
+            <img src="./copy.png" onclick="copyPass()">
+        </div>
+        <button onclick="createPass()"><img src="./generate.png">Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
